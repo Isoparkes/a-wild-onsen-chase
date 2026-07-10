@@ -1,0 +1,18 @@
+segment_id,leg_id,date,transport_mode,service_name,origin,origin_lat,origin_lon,destination,destination_lat,destination_lon,final_destination,train_name
+0,1,21/02/2026,,,,,,Tokyo Station,35.6812,139.7671,FALSE,
+1,1,21/02/2026,Train,JR Hokuriku Shinkansen (Hakutaka),Tokyo Station,35.6812,139.7671,Iiyama Station,36.85,138.3667,FALSE,Hakutaka 561
+2,1,21/02/2026,Bus,Nozawa Onsen Liner,Iiyama Station,36.85,138.3667,Nozawa Onsen,36.9236,138.4391,TRUE,
+3,2,28/02/2026,Bus,Nozawa Onsen Liner,Nozawa Onsen Chuo Terminal,36.9236,138.4391,Iiyama Station,36.85,138.3667,FALSE,
+4,2,28/02/2026,Train,Hokuriku Shinkansen (Hakutaka),Iiyama Station,36.85,138.3667,Takasaki Station,36.3221,139.0035,FALSE,Hakutaka 594
+5,2,28/02/2026,Train,Joetsu Shinkansen (Toki),Takasaki Station,36.3221,139.0035,Niigata Station,37.9161,139.0364,FALSE,Toki 321
+6,2,28/02/2026,Taxi,Taxi,Niigata Station,37.9161,139.0364,Tsukioka,37.8567,139.2119,TRUE,
+7,3,02/03/2026,Taxi,Taxi,Tsukioka,37.8567,139.2119,Niigata Station,37.9161,139.0364,FALSE,
+8,3,02/03/2026,Train,Joetsu Shinkansen (Toki),Niigata Station,37.9161,139.0364,Omiya Station,35.906,139.6237,FALSE,Toki 318
+9,3,02/03/2026,Train,Tohoku Shinkansen (Hayabusa),Omiya Station,35.906,139.6237,Shin-Aomori Station,40.8283,140.6935,FALSE,Hayabusa 25 (coupled with Komachi 25)
+10,3,02/03/2026,Train,JR Ou Line,Shin-Aomori Station,40.8283,140.6935,Aomori,40.8244,140.7398,TRUE,JR Ou Line local/limited express
+11,4,04/03/2026,Train,JR Ou Line,Aomori Station,40.8244,140.7398,Shin-Aomori Station,40.8283,140.6935,FALSE,JR Ou Line local
+12,4,04/03/2026,Train,Hokkaido Shinkansen (Hayabusa),Shin-Aomori Station,40.8283,140.6935,Shin-Hakodate-Hokuto Station,41.9075,140.6472,FALSE,Hayabusa 5
+13,4,04/03/2026,Train,Hakodate Liner,Shin-Hakodate-Hokuto Station,41.9075,140.6472,Hakodate,41.7737,140.7264,TRUE,Hakodate Liner
+14,5,07/03/2026,Train,Limited Express Hokuto,Hakodate Station,41.7737,140.7264,Oshamambe Station,42.51,140.3733,FALSE,Limited Express Hokuto
+15,5,07/03/2026,Train,JR Hakodate Line (Local),Oshamambe Station,42.51,140.3733,Kutchan Station,42.9017,140.7458,FALSE,JR Hakodate Line local
+16,5,07/03/2026,Bus,Shuttle bus,Kutchan Station,42.9017,140.7458,Niseko,42.8635,140.6981,TRUE,
