@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { withBase } from '../../lib/assetPath.js'
 
 export default function BaseMap({ src }) {
   const [current, setCurrent] = useState(src)
@@ -10,7 +11,7 @@ export default function BaseMap({ src }) {
 
     // Preload the next image before swapping so the crossfade starts once
     const img = new Image()
-    img.src = src
+    img.src = withBase(src)
     const swap = () => {
       setPrevious(prevSrcRef.current)
       setCurrent(src)
@@ -36,7 +37,7 @@ export default function BaseMap({ src }) {
         <img
           key={previous}
           className="map-layer__img map-layer__img--under"
-          src={previous}
+          src={withBase(previous)}
           alt=""
           draggable={false}
         />
@@ -44,7 +45,7 @@ export default function BaseMap({ src }) {
       <img
         key={current}
         className="map-layer__img map-layer__img--over"
-        src={current}
+        src={withBase(current)}
         alt=""
         draggable={false}
       />

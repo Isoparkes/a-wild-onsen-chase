@@ -1,7 +1,6 @@
 import { renderTextWithMarkup } from '../lib/textMarkup.jsx'
+import { withBase } from '../lib/assetPath.js'
 
-// media.caption goes through renderTextWithMarkup too, so [links](url) and
-// *italics* work in captions
 export default function MediaCard({ media, mediaRef, compact }) {
   if (!media) return null
 
@@ -11,14 +10,14 @@ export default function MediaCard({ media, mediaRef, compact }) {
         media.type === 'video' ? (
           <video
             className="media-card__media"
-            src={media.src}
+            src={withBase(media.src)}
             autoPlay
             muted
             loop
             playsInline
           />
         ) : (
-          <img className="media-card__media" src={media.src} alt={media.caption || ''} />
+          <img className="media-card__media" src={withBase(media.src)} alt={media.caption || ''} />
         )
       ) : (
         <div className="media-card__placeholder">
